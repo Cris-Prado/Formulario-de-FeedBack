@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro - Fantasma Codes</title>
+</head>
+<body>
+    <main class="main">
+        <div class="img"></div>
+        <div class="container">
+            <div class="grupo">
+                <h1 class="title"><u>Formulario FeedBack</u></h1>
+                <h2 class="subtitle">Deixe seu FeedBack</h2>
+                <form action="https://formsubmit.co/cristianoprado365@gmail.com" method="POST" class="form">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+                    <input type="hidden" name="_autoresponse" value="Recebemos sua mensagem, obrigado pelo feedback!">
+                    <input type="hidden" name="_captcha" value="false">
+                    <fieldset>
+                        <div class="classes">
+                            <div class="classe">
+                                <label for="user" class="label">Nome</label><br>
+                                <i class='bx bx-user loge'></i>
+                                <input type="text" name="user" id="user" class="input" placeholder="Nome Completo" required>
+                            </div>
+
+                            <div class="classe">
+                                <label for="email" class="label">Email</label><br>
+                                <i class='bx bx-envelope loge'></i>
+                                <input type="email" name="email" id="email" class="input" placeholder="Email" required>
+                            </div><br>
+                            
+                            <div class="classe">
+                                <textarea name="textarea" id="textarea" cols="30" rows="10" class="textarea" placeholder="Deixe aqui seu comentario!"></textarea>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <input type="submit" value="Enviar" class="botao" onclick="msg()">
+                </form>
+            </div>
+        </div>
+        <div class="home">
+            <a href=""><i class='bx bxs-home'></i></a>
+        </div>
+    </main>
+    <script>
+        function msg() {
+          alert("Você enviou seu feedback!");
+        }
+    </script>
+</body>
+</html>
